@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Aero</title>
+    <title>SK Airconditiong</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,11 +45,11 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt me-2"></small>
-                    <small>+012 345 6789</small>
+                    <small>+91-8882319247</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="far fa-envelope-open me-2"></small>
-                    <small>info@example.com</small>
+                    <small>airconditioningsk@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -68,7 +68,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0"><img class="img-fluid me-3" src="img/icon/icon-02-primary.png" alt="">Aero</h1>
+            <h1 class="m-0"><img class="img-fluid me-3" src="img/icon/icon-02-primary.png" alt="">SK Airconditiong</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -123,8 +123,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-6 mb-5">If You Have Any Query, Please Contact Us</h1>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quisquam eum. Perferendis error veritatis, modi at earum omnis atque eum sunt, optio veniam cupiditate, magnam reiciendis repellat! Cupiditate, laudantium odit. <a href="#">Download Now</a>.</p>
-                    <form>
+                    <p class="mb-4">Feel free to contact us!! Just fill this form and give some details to connect with you </p>
+                    <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -151,18 +151,31 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary py-3 px-5" type="button" onclick="sendEmail()">Send Message</button>
                             </div>
                         </div>
                     </form>
+                    
+                    <script>
+                        function sendEmail() {
+                            // Fetching values from the form
+                            var name = document.getElementById("name").value;
+                            var email = document.getElementById("email").value;
+                            var subject = document.getElementById("subject").value;
+                            var message = document.getElementById("message").value;
+                    
+                            // Constructing the mailto: URI
+                            var mailtoLink = "mailto:support@example.com" +
+                                "?subject=" + encodeURIComponent(subject) +
+                                "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+                    
+                            // Opening the default email client
+                            window.location.href = mailtoLink;
+                        }
+                    </script>
+                    
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    <div class="position-relative overflow-hidden h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                    </div>
+                 
                 </div>
             </div>
         </div>
@@ -175,12 +188,12 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6">
-                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="">Aero</h1>
-                    <span>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</span>
+                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="">SK Airconditioning</h1>
+                    <span>It gives us immense pleasure to introduce ourselves as a team of professionals with a shared vision. Ever since we have build our brick of success by providing HVAV services like in HVAV Contracting.</span>
                 </div>
                 <div class="col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
+                    <p>Give us your feedback</p>
                     <div class="position-relative">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -188,9 +201,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>D-363, Samta Enclave, Phase-I, Nearby Dispensary, Najafgarh, New Delhi – 110071</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91-8882319247</p>
+                    <p><i class="fa fa-envelope me-3"></i>airconditioningsk@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Our Services</h5>
